@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salami Larking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body style="animation-name: none;">
+    <div class="barraSuperior">
+        <div class="primeraFila">
+            <div class="redes">
+                <a href="https://www.facebook.com/"><iconify-icon icon="brandico:facebook-rect" class="icono"
+                        style="color: blue;" width="25"></iconify-icon></a>
+                <a href="https://twitter.com/"><iconify-icon icon="skill-icons:twitter" class="icono"
+                        width="25"></iconify-icon></a>
+                <a href="https://www.instagram.com/"><iconify-icon icon="skill-icons:instagram" class="icono"
+                        width="25"></iconify-icon></a>
+                <a href="https://www.whatsapp.com/"><iconify-icon icon="logos:whatsapp-icon" class="icono"
+                        width="25"></iconify-icon></a>
+                <p id="telefono">+54 9 (11) 6866-7794</p>
+            </div>
+            <div id="publicidadTitulo" class="spanVenta">
+                Bienvenidos a</div>
+            <div class="boton">
+                <a id="cambioTema" onclick="cambiarTema()"><iconify-icon icon="mdi:theme-light-dark"
+                        width="25"></iconify-icon></a>
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <a href="index.html" class="titulo">Salami Larking</a>
+            <div class="menuItems">
+                <div class="categorias"><a href="productos.html">Salames</a></div>
+                <div class="categorias"><a href="index.html">Quesos</a></div>
+                <div class="categorias"><a href="index.html">Embutidos</a></div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="cuerpo">
+        <div class="cuerpoProductos">
+
+            <div class="botonesSlide">
+                <a id="btnAnterior" onclick="botonAnterior()">
+                    < </a>
+                        <a id="btnSiguiente" onclick="botonSiguiente()">></a>
+                        <div class="productos">
+                            <img src="salami2.jpg" alt="salame1" class="imgProductos" style="display: block;">
+                            <img src="salami3.jpg" alt="salame2" class="imgProductos">
+                            <img src="salami4.jpg" alt="salame3" class="imgProductos">
+                        </div>
+            </div>
+            <section class="card-container">
+                <article class="card">
+                    <img src="salame1.jpg" alt="salame1">
+                    <h2>Oferta Salame 1</h2>
+                    <p>Precio Anterior: $3.000 x Kg</p>
+                    <p>Precio Actual: $2.500 x Kg</p>
+                    <h2>Stock: Out of Stock</h2>
+                    <div class="carrito">
+                        <iconify-icon icon="ic:round-add-shopping-cart" style="color: black;" width="30"></iconify-icon>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="salame2.jpg" alt="salame2">
+                    <h2>Oferta Salame 2</h2>
+                    <p>Precio Anterior: $3.000 x Kg</p>
+                    <p>Precio Actual: $2.500 x Kg</p>
+                    <h2>Stock: Out of Stock</h2>
+                    <div class="carrito">
+                        <iconify-icon icon="ic:round-add-shopping-cart" style="color: black;" width="30"></iconify-icon>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="salame3.jpg" alt="salame3">
+                    <h2>Oferta Salame 3</h2>
+                    <p>Precio Anterior: $3.000 x Kg</p>
+                    <p>Precio Actual: $2.500 x Kg</p>
+                    <h2>Stock: Out of Stock</h2>
+                    <div class="carrito">
+                        <iconify-icon icon="ic:round-add-shopping-cart" style="color: black;" width="30"></iconify-icon>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="salame4.jpg" alt="salame4">
+                    <h2>Oferta Salame 4</h2>
+                    <p>Precio Anterior: $3.000 x Kg</p>
+                    <p>Precio Actual: $2.500 x Kg</p>
+                    <h2>Stock: Out of Stock</h2>
+                    <div class="carrito">
+                        <iconify-icon icon="ic:round-add-shopping-cart" style="color: black;" width="30"></iconify-icon>
+                    </div>
+                </article>
+            </section>
+
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <div class="footerbox">
+            <div class="direccion">
+                <h1>Salami Larking S.A. <br>Av. 25 de Mayo 3531 <br>Ciudad Autonoma de Buenos Aires <br>+54 9 (11)
+                    6866-7794</h1>
+            </div>
+            <div>
+                <h1 class="titulo">Salami Larking</h1>
+            </div>
+            <div class="afip">
+                <img src="afip.jpg" alt="afip">
+            </div>
+        </div>
+        <div class="copyright">© Argentina Programa - UNGS - TP Lucas E. Liotta Dobal<br> Todos los
+            derechos reservados</div>
+    </footer>
+
+    <script src="script.js">"text/javascript"</script>
+</body>
+
+</html>

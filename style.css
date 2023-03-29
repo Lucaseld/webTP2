@@ -1,0 +1,494 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: black;
+    animation: 2s;
+    animation-delay: initial;
+    animation-name: slideIn;
+    color: white;
+    transition: all 0.5s ease-in 0s;
+}
+
+a:active,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.barraSuperior {
+    width: 100%;
+    background: inherit;
+}
+
+.primeraFila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5.5em;
+    margin-right: 5.5em;
+    background-color: inherit;
+
+}
+
+.icono {
+    background-color: #f8f7f4;
+    border-radius: 11px;
+    margin-left: 0.5em;
+}
+
+#telefono {
+    color: inherit;
+    margin: auto;
+    margin-left: 0.4em;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 0.5em;
+    padding-bottom: 0.70em;
+    flex: 1;
+
+}
+
+.boton {
+    flex: 1;
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    text-align: center;
+
+}
+
+
+#cambioTema:hover {
+
+    transform: scale(1.3);
+}
+
+.spanVenta {
+    text-align: center;
+    transition: all 0.3s ease-in 0s;
+}
+
+#publicidadTitulo {
+    text-align: center;
+    min-height: 1px;
+    font-size: 13px;
+    margin: auto;
+    width: 33%;
+    color: inherit;
+}
+
+.icono:hover,
+#desplegar:hover,
+.opciones:hover {
+    -webkit-box-shadow: 0px 0px 21px 5px rgba(249, 0, 0, 0.9);
+    -moz-box-shadow: 0px 0px 21px 5px rgba(249, 0, 0, 0.9);
+    box-shadow: 0px 0px 21px 5px rgba(249, 0, 0, 0.9);
+    transition: .3s;
+    transform: scale(1.2);
+}
+
+.titulo {
+    color: inherit;
+    font-size: 2.5em;
+    font-family: 'Sacramento', cursive;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+
+.menuItems {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    margin-left: 20%;
+
+}
+
+
+.categorias {
+    display: flex;
+    margin-left: 5.5em;
+
+}
+
+.menu {
+    background: #45454650;
+    padding-left: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.barraSuperiorEspacio {
+    min-height: 8.5em;
+}
+
+.cuerpo {
+    width: 100%;
+    /*    background-image: url("salami.png");
+*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.171);
+    overflow: hidden;
+}
+
+
+.menuDesplegable {
+    width: 100%;
+    max-width: auto;
+    padding-top: 4em;
+    position: absolute;
+}
+
+.opciones {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 0 .2em;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+
+.botonMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opciones {
+    font-size: 1.25em;
+    color: rgba(230, 230, 230, 0.849);
+    -webkit-text-stroke: .5px black;
+}
+
+#desplegable {
+    position: relative;
+    top: -40px;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+#desplegar {
+    position: relative;
+    transition: .3s;
+    margin-right: 1.5em;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+
+.divSlogan {
+    margin-top: 7em;
+    margin-left: 5em;
+    -webkit-text-stroke: .75px black;
+    position: absolute;
+}
+
+.sloganPrimeraParte {
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 8em;
+    color: #cacaca;
+}
+
+.sloganSegundaParte {
+    font-family: 'Rubik', sans-serif;
+    font-size: 8em;
+    color: #f9c200;
+}
+
+.cuerpoProductos {
+    width: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.productos {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.productos img {
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    align-items: center;
+}
+
+.imgProductos {
+    display: none;
+
+}
+
+.productosInicio {
+    flex: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+#prodCol1 {
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    padding-left: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#prodCol2 {
+    width: 50%;
+    margin: 0 0 0 .2em;
+    border-radius: 20px 0 0 20px;
+    padding-left: 25%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: rgb(58, 37, 63);
+    color: azure;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0.6rem;
+    width: 300px;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 0 30px black;
+}
+
+.card img {
+    display: block;
+    width: 90%;
+    height: 50%;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.card h2 {
+    font-size: 1rem;
+    margin: 0.6rem;
+}
+
+.card p {
+    font-size: 0.85rem;
+    margin: 0.6rem;
+}
+
+.card a {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 1.2rem;
+    margin: 0.15rem;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.card a:hover {
+    background-color: #0062cc;
+    box-shadow: 0 0 20px rgb(255, 145, 0);
+}
+
+.botonesSlide {
+    flex: auto;
+    position: relative;
+}
+
+#btnAnterior,
+#btnSiguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: inherit;
+    font-size: 5em;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-text-stroke: 1px black;
+    font: xx-large;
+}
+
+#btnAnterior {
+    left: 0;
+}
+
+#btnSiguiente {
+    right: 0;
+}
+
+footer {
+    padding: 1em 2em;
+    margin-top: auto;
+    flex: auto;
+    display: block;
+    min-height: min-content;
+    background-color: #45454650;
+
+}
+
+footer .footerbox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer .direccion {
+    color: inherit;
+    font-size: .55em;
+    flex: 1;
+}
+
+footer .titulo {
+    color: inherit;
+    font-size: 2em;
+}
+
+footer .copyright {
+    color: inherit;
+    font-size: 0.80em;
+    text-align: center;
+}
+
+footer .afip {
+    flex: 1;
+    text-align: center;
+    flex-direction: row;
+
+}
+
+footer .afip img {
+    margin-right: 0;
+    margin-left: auto;
+    width: 50px;
+    height: auto;
+
+}
+
+.modoOscuro {
+    background-color: black;
+}
+
+.carrito:hover {
+    transform: scale(1.5);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+@keyframes slideIn {
+    from {
+        margin-top: 50%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+
+@media only screen and (max-width: 760px) {
+    .divSlogan {
+        -webkit-text-stroke: .75px black;
+    }
+
+
+    .sloganPrimeraParte {
+
+        font-size: 1em;
+    }
+
+    .sloganSegundaParte {
+        font-size: 1em;
+    }
+
+
+    .redes {
+        display: none;
+    }
+
+    footer .direccion {
+        font-size: 0.35em;
+    }
+
+    footer .footerbox {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin: 1rem 0;
+        width: 250px;
+    }
+
+    .categorias {
+        display: none;
+    }
+
+    .boton {
+        display: flex;
+    }
+
+    #desplegar {
+
+        visibility: visible;
+    }
+}
