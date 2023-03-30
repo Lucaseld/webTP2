@@ -40,18 +40,31 @@
         <div class="menu">
             <a href="index.html" class="titulo">Salami Larking</a>
             <div class="menuItems">
+                <div class="categorias"><a href="index.html">Inicio</a></div>
                 <div class="categorias"><a href="productos.html">Salames</a></div>
-                <div class="categorias"><a href="index.html">Quesos</a></div>
-                <div class="categorias"><a href="index.html">Embutidos</a></div>
+                <div class="categorias"><a href="#">Quesos</a></div>
+                <div class="categorias"><a href="#">Embutidos</a></div>
             </div>
+            <iconify-icon icon="ic:round-menu" id="desplegar" width="25"></iconify-icon>
         </div>
-
 
     </div>
     <div class="cuerpo">
         <div class="cuerpoProductos">
 
             <div class="botonesSlide">
+                <div class="menuDesplegable">
+                    <div id="desplegable">
+                        <a href="index.html">
+                            <h1 class="opciones">INICIO</h1>
+                        </a>
+                        <a href="productos.html">
+                            <h1 class="opciones">SALAMES</h1>
+                        </a>
+                        <h1 class="opciones">QUESOS</h1>
+                        <h1 class="opciones">EMBUTIDOS</h1>
+                    </div>
+                </div>
                 <a id="btnAnterior" onclick="botonAnterior()">
                     < </a>
                         <a id="btnSiguiente" onclick="botonSiguiente()">></a>

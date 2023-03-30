@@ -83,7 +83,8 @@ a:visited {
     min-height: 1px;
     font-size: 13px;
     margin: auto;
-    width: 33%;
+    width: fit-content;
+
     color: inherit;
 }
 
@@ -112,14 +113,15 @@ a:visited {
     display: flex;
     flex: auto;
     flex-direction: row;
-    margin-left: 20%;
+    position: relative;
+    margin-left: 17%;
 
 }
 
 
 .categorias {
     display: flex;
-    margin-left: 5.5em;
+    margin-left: 1.5em;
 
 }
 
@@ -137,7 +139,6 @@ a:visited {
 }
 
 .cuerpo {
-    width: 100%;
     /*    background-image: url("salami.png");
 */
     display: flex;
@@ -145,6 +146,26 @@ a:visited {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.171);
     overflow: hidden;
+
+}
+
+
+.cuerpoImg {
+    width: auto;
+    height: 750px;
+    box-shadow: 0 0 10px grey;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.home {
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 
@@ -201,8 +222,8 @@ a:visited {
 
 
 .divSlogan {
-    margin-top: 7em;
-    margin-left: 5em;
+    margin-top: 3em;
+    margin-left: 4em;
     -webkit-text-stroke: .75px black;
     position: absolute;
 }
@@ -210,35 +231,39 @@ a:visited {
 .sloganPrimeraParte {
 
     font-family: 'Rubik', sans-serif;
-    font-size: 8em;
+    font-size: 6em;
     color: #cacaca;
 }
 
 .sloganSegundaParte {
     font-family: 'Rubik', sans-serif;
-    font-size: 8em;
+    font-size: 6em;
     color: #f9c200;
 }
 
 .cuerpoProductos {
     width: 100%;
     background-position: center;
-    display: flex;
-    flex-direction: column;
 }
+
 
 .productos {
     width: 100%;
-    height: 700px;
-    overflow: hidden;
+    height: 550px;
+    box-shadow: 0 0 10px grey;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
 }
 
 .productos img {
     margin: auto;
     min-height: 100%;
     min-width: 100%;
-    align-items: center;
+
 }
+
 
 .imgProductos {
     display: none;
@@ -279,8 +304,8 @@ a:visited {
 }
 
 .card {
-    background-color: rgb(58, 37, 63);
-    color: azure;
+    background-color: rgba(114, 113, 113, 0.329);
+    color: inherit;
     border-radius: 10px;
     box-shadow: 0 0 10px grey;
     display: flex;
@@ -294,7 +319,7 @@ a:visited {
 }
 
 .card:hover {
-    box-shadow: 0 0 30px black;
+    box-shadow: 0 0 25px rgba(153, 80, 80, 0.658);
 }
 
 .card img {
@@ -315,30 +340,7 @@ a:visited {
     margin: 0.6rem;
 }
 
-.card a {
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    display: block;
-    font-size: 1.2rem;
-    margin: 0.15rem;
-    padding: 0.5rem;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
 
-.card-slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-}
-
-.card a:hover {
-    background-color: #0062cc;
-    box-shadow: 0 0 20px rgb(255, 145, 0);
-}
 
 .botonesSlide {
     flex: auto;
@@ -441,6 +443,8 @@ footer .afip img {
 
 @media only screen and (max-width: 760px) {
     .divSlogan {
+        margin-top: 4em;
+        margin-left: 2em;
         -webkit-text-stroke: .75px black;
     }
 
@@ -491,4 +495,13 @@ footer .afip img {
 
         visibility: visible;
     }
+
+    .productos {
+        height: 400px;
+    }
+
+    .cuerpoImg {
+        height: 450px;
+    }
+
 }
